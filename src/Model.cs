@@ -16,6 +16,10 @@ namespace Production {
             Rules.Add(new Rule(from, to));
         }
 
+        public string? GetFactDescription(string name) {
+            return Facts[name].Description;
+        }
+
 
 
         public class Fact {
@@ -48,10 +52,10 @@ namespace Production {
             public bool IsApplicable(HashSet<string> current) => From.IsSubsetOf(current);
 
 
-            static string StringifyHashSet(HashSet<string> set) {
+            static string StringifySet(IEnumerable<string> set) {
                 string s = "[]";
 
-                if (set.Count > 0) {
+                if (set.Any()) {
                     s = "[";
                     s += set.First().ToString();
                     bool skip = true;
@@ -65,8 +69,14 @@ namespace Production {
                 return s;
             }
 
+            public string ToStringWithDescriptions(Model model) {
+                var fromDescs = From.Select(name => model.GetFactDescription(name) ?? name);
+                var toDescs = To.Select(name => model.GetFactDescription(name) ?? name);
+                return StringifySet(fromDescs) + " => " + StringifySet(toDescs);
+            }
+
             public override string ToString() {
-                return StringifyHashSet(From) + " => " + StringifyHashSet(To);
+                return StringifySet(From) + " => " + StringifySet(To);
             }
         }
     }

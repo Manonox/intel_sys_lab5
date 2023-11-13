@@ -1,0 +1,68 @@
+F101: Сайт
+F102: Сервер
+F103: Data science
+F104: Игра
+F105: Мобильное приложение
+F106: Desktop
+F201: Быстродействие
+F202: Быстрое прототипирование
+F203: Популярность технологии
+F204: Широкая кастомизация
+F205: Решение из коробки
+F206: Предсказуемость
+F601: Компилируемый
+F602: Интерпретируемый
+F603: Статическая типизация
+F604: Динамическая типизация
+F605: ООП
+F606: ФП
+F301: Android
+F302: iOS
+F303: Windows
+F304: macOS
+F305: Linux
+F306: Браузер
+F307: Кросс-платформенное
+F401: Dart
+F402: Swift
+F403: Kotlin
+F404: C#
+F405: Objective C
+F406: C++ 
+F407: Ruby
+F408: PHP
+F409: Python 
+F410: HTML, CSS
+F411: JavaScript 
+F412: TypeScript
+F413: Java
+F414: R 
+F415: Elixir
+F501: Flutter
+F502: Angular.js
+F503: Vue.js
+F504: Express.js
+F505: Django
+F506: Flask
+F507: Spring Boot
+F508: Ruby on Rails
+F509: Laravel
+F510: ASP.NET
+F511: Symfony
+F512: Marble.js
+F513: PyTorch
+F514: Phoenix
+F515: FastAPI
+F516: Nest.js
+F517: Tensorflow
+F518: CherryPy
+F519: SwiftUI
+F520: Ktor
+F521: Qt
+F522: Sinatra
+F523: React.js
+F524: ReactNative
+F525: Unity engine
+F526: Unreal engine
+F537: Phaser.js
+F538: Shiny
